@@ -60,7 +60,6 @@
 |||
 | Average Gas Price | 燃料費 |
 |  Average Gas Limit |平均交易最高燃料量
- |
 |  Average Transaction Fee | 平均交易手續費 |
 |  Gas Used Per Day | 每日 Gas 使用量 |
 |||
