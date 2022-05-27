@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Observing Ether Value in Basic Econometrics Method - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p:last-child{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p:last-child,.markdown-body .alert>ul:last-child{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.figma{display:table;position:relative;width:100%;padding-bottom:56.25%}.figma iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:1px solid #eee}.markmap-container{height:300px}.markmap-container>svg{width:100%;height:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:50%;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;text-decoration:none;padding-left:22px}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em;font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true" style=""><h1 id="Observing-Ether-Value-in-Basic-Econometrics-Method" data-id="Observing-Ether-Value-in-Basic-Econometrics-Method" style=""><a class="anchor hidden-xs" href="#Observing-Ether-Value-in-Basic-Econometrics-Method" title="Observing-Ether-Value-in-Basic-Econometrics-Method"><span class="octicon octicon-link"></span></a><span>Observing Ether Value in Basic Econometrics Method</span></h1><blockquote>
+<p><span>使用基本計量方法觀察以太幣價格因素</span></p>
+</blockquote><p><strong><span>Article Quick Look</span></strong></p><ul>
+<li><a href="https://colab.research.google.com/drive/18uAPyIbSiSVVl8U8zZaej0_6lt6P5CQ6?usp=sharing" target="_blank" rel="noopener"><span>Run this Demo in Google Colab</span></a></li>
+<li><a href="https://docs.google.com/presentation/d/1CKOaILPyzXpkKC7QmNm82kAXyJszobXTEzcy0KmEnTs/edit?usp=sharing" target="_blank" rel="noopener"><span>See the Slide in Google Presentation</span></a></li>
+</ul><h2 id="目錄" data-id="目錄" style=""><a class="anchor hidden-xs" href="#目錄" title="目錄"><span class="octicon octicon-link"></span></a><span>目錄</span></h2><ul>
+<li><strong><span>研究介紹</span></strong>
+<ul>
+<li><span>動機與目的、研究流程</span></li>
+</ul>
+</li>
+<li><strong><span>資料描述</span></strong>
+<ul>
+<li><span>資料類型與 EDA</span></li>
+</ul>
+</li>
+<li><strong><span>資料處理、特徵工程</span></strong>
+<ul>
+<li><span>資料預處理、應變數、自變數介紹</span></li>
+</ul>
+</li>
+<li><strong><span>模型</span></strong>
+<ul>
+<li><span>資料檢測</span></li>
+<li><span>模型分析</span></li>
+<li><span>模型介紹與結果比較</span></li>
+</ul>
+</li>
+<li><strong><span>總結</span></strong>
+<ul>
+<li><span>應用、結論</span></li>
+</ul>
+</li>
+</ul><hr><h2 id="研究介紹" data-id="研究介紹" style=""><a class="anchor hidden-xs" href="#研究介紹" title="研究介紹"><span class="octicon octicon-link"></span></a><span>研究介紹</span></h2><h3 id="研究動機" data-id="研究動機" style=""><a class="anchor hidden-xs" href="#研究動機" title="研究動機"><span class="octicon octicon-link"></span></a><span>研究動機</span></h3><ul>
+<li><span>貨幣政策</span>
+<ul>
+<li><span>研究以太坊上的貨幣政策是否對幣價有直接影響，包含供給量、手續費、燃燒量等</span></li>
+</ul>
+</li>
+<li><span>安全性</span>
+<ul>
+<li><span>研究以太坊上的安全性變數是否對幣價有直接影響，包含哈希率、區塊難度、礦工節點數、礦工收入等</span></li>
+</ul>
+</li>
+<li><span>擴容性</span>
+<ul>
+<li><span>研究以太坊上的金融和去中心化服務是否對幣價有直接影響，包含鎖倉量、NFT 銷售量、穩定幣市值等</span></li>
+</ul>
+</li>
+</ul><h3 id="研究目的" data-id="研究目的" style=""><a class="anchor hidden-xs" href="#研究目的" title="研究目的"><span class="octicon octicon-link"></span></a><span>研究目的</span></h3><p><span>使用迴歸分析找到有說服力的重要變數，可藉此預測幣價和應用於選擇權的去中心化應用程式程式</span></p><h3 id="研究流程" data-id="研究流程" style=""><a class="anchor hidden-xs" href="#研究流程" title="研究流程"><span class="octicon octicon-link"></span></a><span>研究流程</span></h3><p><img src="https://i.imgur.com/3cawGve.png" alt="" loading="lazy"></p><hr><h2 id="資料描述" data-id="資料描述" style=""><a class="anchor hidden-xs" href="#資料描述" title="資料描述"><span class="octicon octicon-link"></span></a><span>資料描述</span></h2><p><a href="https://docs.google.com/spreadsheets/d/1DlyoV5HBEbYAJz0tH8Ul8yE3WRAXSHeLuQhdLDgino8/edit?usp=sharing" target="_blank" rel="noopener"><strong><span>DataSet 2015/7/30~2022/5/12</span></strong></a></p><h3 id="Explanatory-amp-Response-Variables" data-id="Explanatory-amp-Response-Variables" style=""><a class="anchor hidden-xs" href="#Explanatory-amp-Response-Variables" title="Explanatory-amp-Response-Variables"><span class="octicon octicon-link"></span></a><span>Explanatory &amp; Response Variables</span></h3><table>
+<thead>
+<tr>
+<th><span>Explanatory Variables</span></th>
+<th><span>Statement</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><span>1. On-Chain Data</span></strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong><span>Monetary Situation</span></strong></td>
+<td></td>
+</tr>
+<tr>
+<td><span>Total Supply</span></td>
+<td><span>總發行量</span></td>
+</tr>
+<tr>
+<td><span>Market Cap</span></td>
+<td><span>以太幣總市值</span></td>
+</tr>
+<tr>
+<td><span>Daily Ether Burnt</span></td>
+<td><span>每日銷毀量</span></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span>Average Gas Price</span></td>
+<td><span>燃料費</span></td>
+</tr>
+<tr>
+<td><span>Average Gas Limit</span></td>
+<td><span>平均交易最高燃料量</span></td>
+</tr>
+<tr>
+<td><span>Average Transaction Fee</span></td>
+<td><span>平均交易手續費</span></td>
+</tr>
+<tr>
+<td><span>Gas Used Per Day</span></td>
+<td><span>每日 Gas 使用量</span></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span>Blocks Per Day</span></td>
+<td><span>每日出產區塊</span></td>
+</tr>
+<tr>
+<td><span>Average Block Size</span></td>
+<td><span>平均區塊大小</span></td>
+</tr>
+<tr>
+<td><span>Average Difficulty</span></td>
+<td><span>平均區塊難度</span></td>
+</tr>
+<tr>
+<td><strong><span>Security 安全性</span></strong></td>
+<td></td>
+</tr>
+<tr>
+<td><span>Network Hash Rate</span></td>
+<td><span>可以衡量礦工保護網路免受攻擊的處理能力</span></td>
+</tr>
+<tr>
+<td><span>Miner Revenue</span></td>
+<td><span>新鑄造的以太幣和交易費用的加總，礦工收入的高低也會影響到礦工的打包意願</span></td>
+</tr>
+<tr>
+<td><span>Active Nodes</span></td>
+<td><span>運行節點數</span></td>
+</tr>
+<tr>
+<td><strong><span>Usage</span></strong></td>
+<td><span>觀察網路使用量可以給我們當前經濟活動的相關訊息</span></td>
+</tr>
+<tr>
+<td><span>Active Adress</span></td>
+<td><span>活躍地址數量</span></td>
+</tr>
+<tr>
+<td><span>Cumulative Unique Addresses</span></td>
+<td><span>累積地址數量</span></td>
+</tr>
+<tr>
+<td><span>Network Utilization</span></td>
+<td><span>網路使用量</span></td>
+</tr>
+<tr>
+<td><span>Transactions Per Day</span></td>
+<td><span>每日交易量</span></td>
+</tr>
+<tr>
+<td><strong><span>Capability</span></strong></td>
+<td><span>支援智能合約的運作讓其之上的 Dapp 可以促成許多不同的產品和經濟模式。</span></td>
+</tr>
+<tr>
+<td><span>DeFi TVL</span></td>
+<td><span>總鎖倉量</span></td>
+</tr>
+<tr>
+<td><span>Verified Contracts</span></td>
+<td><span>每日驗證合約數量</span></td>
+</tr>
+<tr>
+<td><span>StableCoins Value</span></td>
+<td><span>穩定幣總價值，暫定為 USDT、USDC、DAI 總和</span></td>
+</tr>
+<tr>
+<td><span>Sales NFT per Day</span></td>
+<td><span>NFT 每日銷售額</span></td>
+</tr>
+<tr>
+<td><span>Number of sales NFT per Day</span></td>
+<td><span>NFT 每日銷售量</span></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong><span>3. Competition &amp; Correlation</span></strong></td>
+<td></td>
+</tr>
+<tr>
+<td><span>NASDAQ</span></td>
+<td><span>美股那斯達克指數</span></td>
+</tr>
+<tr>
+<td><span>BTC/USDT Price</span></td>
+<td><span>比特幣價格</span></td>
+</tr>
+<tr>
+<td><span>SOL/USDT Price</span></td>
+<td><span>Solana 價格</span></td>
+</tr>
+<tr>
+<td><span>ADA/USDT Price</span></td>
+<td><span>Cardano 價格</span></td>
+</tr>
+<tr>
+<td><span>BNB/USDT Price</span></td>
+<td><span>幣安幣價格</span></td>
+</tr>
+<tr>
+<td><span>ETC/USDT Price</span></td>
+<td><span>以太坊經典價格</span></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong><span>Response Variables</span></strong></td>
+<td><strong><span>Statement</span></strong></td>
+</tr>
+<tr>
+<td><span>ETH/USDT Price</span></td>
+<td><span>以太幣價格</span></td>
+</tr>
+</tbody>
+</table><h3 id="Additional-Remarks" data-id="Additional-Remarks" style=""><a class="anchor hidden-xs" href="#Additional-Remarks" title="Additional-Remarks"><span class="octicon octicon-link"></span></a><span>Additional Remarks</span></h3><ol>
+<li><span>Speed and Scalability and ETH 2.0</span>
+<ul>
+<li><span>以太坊當前出塊速度為 12~14 秒、交易結算時間約為五分鐘</span></li>
+<li><span>ETH 2.0 將會達到每秒 15000 筆交易，然而 Beacon Chain 的影響在我們目前單就以太坊內部分析來講，對交易來說都只是常數，所以之後我們不會納入分析。</span></li>
+</ul>
+</li>
+<li><span>穩定幣 Stablecoins：</span>
+<ul>
+<li><span>穩定幣代表加密資產們如何和現實世界錨定的一種規則，或許我們可以使用穩定幣的發行數量來觀察現實世界使用區塊鏈的數量關係，不只如此，這也是使用者最直接衡量加密資產或服務價值的方式。同時穩定幣的使用也和鏈上產品和應用程式息息相關，對穩定幣的需求或許會直接或間接地表明使用者的習慣和需求</span></li>
+</ul>
+</li>
+<li><span>Internal governance</span>
+<ul>
+<li><span>Proof-of-Stake Model 中治理代幣可能會對價格產生影響，但由於尚未實行所以目前尚不考慮這個因素</span></li>
+</ul>
+</li>
+<li><span>Competition &amp; Correlation</span>
+<ul>
+<li><span>比特幣作為整個加密貨幣市場的主宰，其波動自然也會帶動其他貨幣的發展，雖然數據顯示從 2020 的 DeFi 爆炸性發展之後 ETH 和 BTC 的相關性就不斷下降，但我想競爭幣的價格還是有可以參考的部分</span></li>
+<li><span>這邊除了 BTC 之外我還選出了其他的主流生態系的加密貨幣來作為解釋變數，看能不能發現一些相關性。</span></li>
+<li><span>此外科技股 NASDAQ 指數也和加密貨幣市場有相關性的可能，因此也納入考量</span></li>
+</ul>
+</li>
+</ol><div class="alert alert-warning">
+<p><span>這裡的分析將不會考慮穩定幣的脫鉤。</span></p>
+</div><hr><h2 id="資料處理、特徵工程" data-id="資料處理、特徵工程" style=""><a class="anchor hidden-xs" href="#資料處理、特徵工程" title="資料處理、特徵工程"><span class="octicon octicon-link"></span></a><span>資料處理、特徵工程</span></h2><h3 id="Data-Preprocessing" data-id="Data-Preprocessing" style=""><a class="anchor hidden-xs" href="#Data-Preprocessing" title="Data-Preprocessing"><span class="octicon octicon-link"></span></a><span>Data Preprocessing</span></h3><ol>
+<li><span>那斯達克指數的資料缺少了六日和某些天數（不知明原因），但我們都知道區塊鏈是沒有在放假的所以這邊簡單用 python 補上，那缺少的六日資料我們沿用當周禮拜五的資料來做填補遺漏值</span></li>
+<li><span>從 EDA 的 ETH 走勢我們可以清楚看見在 75%（約為 2020/10/9）前後的資料是完全不同模型，所以未來會將其切成兩份進行分析</span></li>
+</ol><h3 id="TS’2-No-Perfect-Multicollinearity" data-id="TS’2-No-Perfect-Multicollinearity" style=""><a class="anchor hidden-xs" href="#TS’2-No-Perfect-Multicollinearity" title="TS’2-No-Perfect-Multicollinearity"><span class="octicon octicon-link"></span></a><span>TS’2 No Perfect Multicollinearity</span></h3><p><img src="https://i.imgur.com/1paWR73.png" alt="" loading="lazy"></p><ol>
+<li><span>我觀察到 Market Cap 和 ETH/USDT 是完全線性關係，所以將其從 X 中剔除</span></li>
+<li><span>同時 Hash Rate 和 Block Difficulty 也是線性關係，但因為去除其中有可能會導致最後無法解釋，所以暫時留著（未來在 OLS 會自動排除）！</span></li>
+<li><span>增加四組 ETH_lag 變數，延期一天、一旬、兩旬、一個月。</span></li>
+</ol><h3 id="EDA（探索式資料分析）" data-id="EDA（探索式資料分析）" style=""><a class="anchor hidden-xs" href="#EDA（探索式資料分析）" title="EDA（探索式資料分析）"><span class="octicon octicon-link"></span></a><span>EDA（探索式資料分析）</span></h3><p><span>接下來進入 EDA 的部分，這邊分成兩個步驟來寫，一個是 Response Variable，另外一個是 Explanatory。</span></p><p><img src="https://i.imgur.com/9qB8r1A.png" alt="" loading="lazy"></p><p><img src="https://i.imgur.com/tqHWCIx.png" alt="" loading="lazy"></p><p><span>比較特別的是 Explanatory Variables 我有做正規化來讓 Ploting 的樣子更好觀察。畢竟觀察絕對距離沒什麼意義，使用相對距離來呈現趨勢和相關性我自己覺得更為合適！</span></p><p><img src="https://i.imgur.com/89Syq09.png" alt="" loading="lazy"></p><p><span>可以觀察到在資料前 75% 的部分競爭幣的趨勢和以太、比特非常類似，但在後 25% 的部分都有走出自己的趨勢。也可以很明顯看出那斯達克指數有獨特的趨勢。</span></p><p><img src="https://i.imgur.com/R1iDTHx.png" alt="" loading="lazy"></p><p><span>可以發現獨特地址、交易數量等變數有一個明顯向上的趨勢。</span></p><hr><h2 id="Model-1---Original-OLS" data-id="Model-1---Original-OLS" style=""><a class="anchor hidden-xs" href="#Model-1---Original-OLS" title="Model-1---Original-OLS"><span class="octicon octicon-link"></span></a><span>Model 1 - Original OLS</span></h2><p><span>直接使用原始的資料做最基本沒有任何變化的 OLS：</span></p><pre><code>                       Original OLS Regression Results                        
+==============================================================================
+Dep. Variable:               ETH/USDT   R-squared:                       0.992
+Model:                            OLS   Adj. R-squared:                  0.992
+Method:                 Least Squares   F-statistic:                     2519.
+Date:                Fri, 27 May 2022   Prob (F-statistic):               0.00
+Time:                        04:51:27   Log-Likelihood:                -3509.7
+No. Observations:                 579   AIC:                             7075.
+Df Residuals:                     551   BIC:                             7198.
+Df Model:                          27                                         
+Covariance Type:            nonrobust                                         
+===============================================================================================
+                                  coef    std err          t      P&gt;|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                        1.134e+04   4383.332      2.586      0.010    2727.228    1.99e+04
+ETH_lag1                      759.4783     63.545     11.952      0.000     634.658     884.298
+ETH_lag10                     -42.0006     42.332     -0.992      0.322    -125.152      41.151
+ETH_lag20                      70.7987     41.857      1.691      0.091     -11.420     153.017
+ETH_lag30                      23.3791     37.873      0.617      0.537     -51.015      97.773
+EtherSupply                   -2.8e-05   1.69e-05     -1.653      0.099   -6.13e-05    5.27e-06
+Daily Ether Burnt(ETH)         -0.0294      0.004     -8.057      0.000      -0.037      -0.022
+Gas Limit                      -0.0003   8.43e-05     -3.181      0.002      -0.000      -0.000
+Gas Price(Wei)              -2.833e-09   3.06e-10     -9.258      0.000   -3.43e-09   -2.23e-09
+Gas Used Per Day             4.356e-08   1.41e-08      3.090      0.002    1.59e-08    7.12e-08
+Average Txn Fee (USD)          17.6229      1.772      9.945      0.000      14.142      21.104
+Blocks Per Day                 -0.4906      0.258     -1.898      0.058      -0.998       0.017
+Average Block Size(Bytes)      -0.0071      0.001     -6.829      0.000      -0.009      -0.005
+BlockDifficulty                 0.4270      0.113      3.773      0.000       0.205       0.649
+Hash Rate(GH/S)                -0.0046      0.001     -3.150      0.002      -0.007      -0.002
+Cumulative Unique Addresses -1.387e-05   3.53e-06     -3.928      0.000   -2.08e-05   -6.93e-06
+Network Utilization         -8963.8744   2509.510     -3.572      0.000   -1.39e+04   -4034.498
+TransactionsCount Per Day       0.0008   9.66e-05      7.907      0.000       0.001       0.001
+DeFi_TVL                     1.032e-08    6.8e-10     15.173      0.000    8.99e-09    1.17e-08
+Verified Contracts              0.0446      0.080      0.556      0.578      -0.113       0.202
+StableCoins Value            -5.77e-09   2.36e-09     -2.446      0.015   -1.04e-08   -1.14e-09
+Sales NFT per Day            6.994e-09   1.64e-07      0.043      0.966   -3.16e-07     3.3e-07
+Number of sales NFT per Day     0.0004      0.000      1.680      0.093    -6.1e-05       0.001
+NASDAQ                          0.0131      0.015      0.854      0.394      -0.017       0.043
+BTC/USDT                        0.0024      0.002      1.491      0.137      -0.001       0.005
+BNB/USDT                       -0.4237      0.119     -3.551      0.000      -0.658      -0.189
+SOL/USDT                       -0.0826      0.333     -0.248      0.804      -0.737       0.571
+ADA/USDT                       -0.8266     29.766     -0.028      0.978     -59.295      57.642
+ETC/USDT                        4.4632      0.718      6.218      0.000       3.053       5.873
+==============================================================================
+Omnibus:                       64.486   Durbin-Watson:                   1.403
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              309.225
+Skew:                           0.348   Prob(JB):                     7.12e-68
+Kurtosis:                       6.512   Cond. No.                     2.44e+14
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.44e+14. This might indicate that there are
+strong multicollinearity or other numerical problems.
+</code></pre><h3 id="TS’4-Heteroscedasticity" data-id="TS’4-Heteroscedasticity" style=""><a class="anchor hidden-xs" href="#TS’4-Heteroscedasticity" title="TS’4-Heteroscedasticity"><span class="octicon octicon-link"></span></a><span>TS’4 Heteroscedasticity</span></h3><p><span>Heteroscedasticity 代表應變數在不同的 level 有不同的散布情形。其中一個驗證方法是透過視覺化的圖查看 OLS model residuals，如果是 homoskedastic 就不會有 residuals pattern。</span></p><p><span>如果 errors 是 heteroskedastic，變異數可能會有上升或下降的趨勢，例如在比較大的 y_hat 或比較大的 x_j 時變異數會上升。</span></p><p><img src="https://i.imgur.com/KlCU87u.png" alt="" loading="lazy"></p><h3 id="TS’4-Heteroscedasticity-Bruesch-Pagan-Test" data-id="TS’4-Heteroscedasticity-Bruesch-Pagan-Test" style=""><a class="anchor hidden-xs" href="#TS’4-Heteroscedasticity-Bruesch-Pagan-Test" title="TS’4-Heteroscedasticity-Bruesch-Pagan-Test"><span class="octicon octicon-link"></span></a><span>TS’4 Heteroscedasticity-Bruesch-Pagan Test</span></h3><p><span>Bruesch-Pagan Test</span></p><ul>
+<li><span>The null hypothesis (H0): Homoscedasticity is present.</span></li>
+<li><span>The alternative hypothesis: (Ha): Homoscedasticity is not present (i.e. heteroscedasticity exists)</span></li>
+</ul><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-keyword">from</span> statsmodels.stats.diagnostic <span class="hljs-keyword">import</span> het_white, het_breuschpagan
+<span class="hljs-comment">#perform White's test</span>
+breuschpagan_test = het_breuschpagan(model.resid, model.model.exog)
+
+<span class="hljs-comment">#define labels to use for output of White's test</span>
+labels = [<span class="hljs-string">'Test Statistic'</span>, <span class="hljs-string">'Test Statistic p-value'</span>, <span class="hljs-string">'F-Statistic'</span>, <span class="hljs-string">'F-Test p-value'</span>]
+
+<span class="hljs-comment">#print results of breuschpagan test</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">dict</span>(<span class="hljs-built_in">zip</span>(labels, breuschpagan_test)))
+
+&gt;&gt;
+{<span class="hljs-string">'Test Statistic'</span>: <span class="hljs-number">178.0210735268372</span>, <span class="hljs-string">'Test Statistic p-value'</span>: <span class="hljs-number">9.10528072676407e-24</span>, <span class="hljs-string">'F-Statistic'</span>: <span class="hljs-number">9.060198266577352</span>, <span class="hljs-string">'F-Test p-value'</span>: <span class="hljs-number">1.2161523288595614e-29</span>}
+</div></div></code></pre><p><span>Test 的結果為非常顯著，有 Heteroscedasticity。</span></p><h3 id="TS’5-Autocorrelation" data-id="TS’5-Autocorrelation" style=""><a class="anchor hidden-xs" href="#TS’5-Autocorrelation" title="TS’5-Autocorrelation"><span class="octicon octicon-link"></span></a><span>TS’5 Autocorrelation</span></h3><p><span>Serial correlation，或叫做 autocorrelation，代表變數在資料集之間的相關程度，也就是兩次觀察之間的相似度對它們之間的時間差的函數。常被使用在 time series data 中 observations 有不同的時間點的情況下。</span></p><p><span>像是此報告中我們估計以太幣在一年之中每個月的幣價，如果較近的時間比較遠的時間更雷同，就稱作 correlated。</span></p><p><img src="https://i.imgur.com/JBvOZeI.png" alt="" loading="lazy"></p><h3 id="TS’5-Autocorrelation-Breusch-Godfrey-Test" data-id="TS’5-Autocorrelation-Breusch-Godfrey-Test" style=""><a class="anchor hidden-xs" href="#TS’5-Autocorrelation-Breusch-Godfrey-Test" title="TS’5-Autocorrelation-Breusch-Godfrey-Test"><span class="octicon octicon-link"></span></a><span>TS’5 Autocorrelation-Breusch-Godfrey Test</span></h3><p><span>因為此資料為 weak exogenous，所以無法使用 Durbin-Watson Test。</span></p><pre><code>import statsmodels.stats.diagnostic as dg
+
+print(dg.acorr_breusch_godfrey(model, nlags=2))
+&gt;
+(94.58755470641997, 2.264390338315469e-20, 35.68650816114991, 4.441467575871316e-21)
+</code></pre><p><span>可以發現 Test statistic X2=94.58755470641997，P-value=2.264390338315469e-20，非常顯著！</span></p><hr><h2 id="Model-2---HAC-vs-FGLS" data-id="Model-2---HAC-vs-FGLS" style=""><a class="anchor hidden-xs" href="#Model-2---HAC-vs-FGLS" title="Model-2---HAC-vs-FGLS"><span class="octicon octicon-link"></span></a><span>Model 2 - HAC vs. FGLS</span></h2><h3 id="Newey-West-standard-errors-for-OLS---HAC" data-id="Newey-West-standard-errors-for-OLS---HAC" style=""><a class="anchor hidden-xs" href="#Newey-West-standard-errors-for-OLS---HAC" title="Newey-West-standard-errors-for-OLS---HAC"><span class="octicon octicon-link"></span></a><span>Newey-West standard errors for OLS - HAC</span></h3><p><span>由上述 Test 我們知道可以使用：Newey-West standard errors for OLS，也就是 Heteroskedasticity and Autocorrelation in regression：</span></p><pre><code>                      Newey-West OLS Regression Results                       
+==============================================================================
+Dep. Variable:               ETH/USDT   R-squared:                       0.992
+Model:                            OLS   Adj. R-squared:                  0.992
+Method:                 Least Squares   F-statistic:                     123.0
+Date:                Fri, 27 May 2022   Prob (F-statistic):          1.53e-179
+Time:                        04:51:29   Log-Likelihood:                -3509.7
+No. Observations:                 579   AIC:                             7075.
+Df Residuals:                     551   BIC:                             7198.
+Df Model:                          27                                         
+Covariance Type:                  HAC                                         
+===============================================================================================
+                                  coef    std err          z      P&gt;|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                        1.134e+04   4426.432      2.561      0.010    2661.666       2e+04
+ETH_lag1                      759.4783     76.461      9.933      0.000     609.618     909.338
+ETH_lag10                     -42.0006     49.869     -0.842      0.400    -139.742      55.741
+ETH_lag20                      70.7987     43.025      1.646      0.100     -13.529     155.127
+ETH_lag30                      23.3791     44.828      0.522      0.602     -64.482     111.240
+EtherSupply                   -2.8e-05   2.43e-05     -1.150      0.250   -7.57e-05    1.97e-05
+Daily Ether Burnt(ETH)         -0.0294      0.008     -3.521      0.000      -0.046      -0.013
+Gas Limit                      -0.0003   6.99e-05     -3.833      0.000      -0.000      -0.000
+Gas Price(Wei)              -2.833e-09   6.46e-10     -4.383      0.000    -4.1e-09   -1.57e-09
+Gas Used Per Day             4.356e-08   1.12e-08      3.902      0.000    2.17e-08    6.54e-08
+Average Txn Fee (USD)          17.6229      3.575      4.929      0.000      10.615      24.631
+Blocks Per Day                 -0.4906      0.239     -2.057      0.040      -0.958      -0.023
+Average Block Size(Bytes)      -0.0071      0.002     -3.895      0.000      -0.011      -0.004
+BlockDifficulty                 0.4270      0.133      3.205      0.001       0.166       0.688
+Hash Rate(GH/S)                -0.0046      0.002     -2.771      0.006      -0.008      -0.001
+Cumulative Unique Addresses -1.387e-05    5.5e-06     -2.519      0.012   -2.47e-05   -3.08e-06
+Network Utilization         -8963.8744   2121.127     -4.226      0.000   -1.31e+04   -4806.541
+TransactionsCount Per Day       0.0008      0.000      4.663      0.000       0.000       0.001
+DeFi_TVL                     1.032e-08   1.78e-09      5.806      0.000    6.84e-09    1.38e-08
+Verified Contracts              0.0446      0.113      0.394      0.693      -0.177       0.266
+StableCoins Value            -5.77e-09   3.12e-09     -1.848      0.065   -1.19e-08     3.5e-10
+Sales NFT per Day            6.994e-09   2.16e-07      0.032      0.974   -4.16e-07     4.3e-07
+Number of sales NFT per Day     0.0004      0.000      1.172      0.241      -0.000       0.001
+NASDAQ                          0.0131      0.020      0.663      0.507      -0.026       0.052
+BTC/USDT                        0.0024      0.003      0.940      0.347      -0.003       0.007
+BNB/USDT                       -0.4237      0.232     -1.826      0.068      -0.879       0.031
+SOL/USDT                       -0.0826      0.651     -0.127      0.899      -1.359       1.194
+ADA/USDT                       -0.8266     50.656     -0.016      0.987    -100.110      98.457
+ETC/USDT                        4.4632      1.192      3.744      0.000       2.126       6.800
+==============================================================================
+Omnibus:                       64.486   Durbin-Watson:                   1.403
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              309.225
+Skew:                           0.348   Prob(JB):                     7.12e-68
+Kurtosis:                       6.512   Cond. No.                     2.44e+14
+==============================================================================
+
+</code></pre><h3 id="HAC-模型-Fitting-結果" data-id="HAC-模型-Fitting-結果" style=""><a class="anchor hidden-xs" href="#HAC-模型-Fitting-結果" title="HAC-模型-Fitting-結果"><span class="octicon octicon-link"></span></a><span>HAC 模型 Fitting 結果</span></h3><p><img src="https://i.imgur.com/yoJVwtl.png" alt="" loading="lazy"></p><p><span>發現 Fitting 的結果表現差強人意。</span></p><h3 id="各模型比較" data-id="各模型比較" style=""><a class="anchor hidden-xs" href="#各模型比較" title="各模型比較"><span class="octicon octicon-link"></span></a><span>各模型比較</span></h3><ul>
+<li><span>如果我們沒有 SE，那 OLS 會比較好因為其為 consistent。</span>
+<ul>
+<li><span>如果解釋變數並非 strictly exogenous，那 FGLS 不僅會 inefficient，還會 inconsistent。</span></li>
+<li><span>HAC 計算大樣本的 robust standard errors 會有不錯的成效</span></li>
+</ul>
+</li>
+<li><span>Trade-off Consistency(Robust, NW Std.err OLS) &lt;-&gt; Efficiency(FGLS)</span></li>
+</ul><h3 id="Significant-Features" data-id="Significant-Features" style=""><a class="anchor hidden-xs" href="#Significant-Features" title="Significant-Features"><span class="octicon octicon-link"></span></a><span>Significant Features</span></h3><p><span>使用 P-value 的排序來比較兩種演算法選出來的重要變數是否不同。</span></p><table>
+<thead>
+<tr>
+<th><span>HAC</span></th>
+<th><span>p-value</span></th>
+<th><span>FGLS</span></th>
+<th><span>p-value</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>ETH_lag1</span></td>
+<td><span>0.0</span></td>
+<td><span>DeFi_TVL</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>DeFi_TVL</span></td>
+<td><span>0.0</span></td>
+<td><span>ETH_lag1</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Average Txn Fee (USD)</span></td>
+<td><span>0.0</span></td>
+<td><span>Average Txn Fee (USD)</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>TransactionsCount Per Day</span></td>
+<td><span>0.0</span></td>
+<td><span>Gas Price(Wei)</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Gas Price(Wei)</span></td>
+<td><span>1e-05</span></td>
+<td><span>Daily Ether Burnt(ETH)</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Network Utilization</span></td>
+<td><span>2e-05</span></td>
+<td><span>TransactionsCount Per Day</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Gas Used Per Day</span></td>
+<td><span>0.0001</span></td>
+<td><span>Average Block Size(Bytes)</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Average Block Size(Bytes)</span></td>
+<td><span>0.0001</span></td>
+<td><span>ETC/USDT</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Gas Limit</span></td>
+<td><span>0.00013</span></td>
+<td><span>Cumulative Unique Addresses</span></td>
+<td><span>0.00013</span></td>
+</tr>
+<tr>
+<td><span>ETC/USDT</span></td>
+<td><span>0.00018</span></td>
+<td><span>BlockDifficulty</span></td>
+<td><span>0.00021</span></td>
+</tr>
+<tr>
+<td><span>Daily Ether Burnt(ETH)</span></td>
+<td><span>0.00043</span></td>
+<td><span>Network Utilization</span></td>
+<td><span>0.00038</span></td>
+</tr>
+<tr>
+<td><span>BlockDifficulty</span></td>
+<td><span>0.00135</span></td>
+<td><span>BNB/USDT</span></td>
+<td><span>0.00043</span></td>
+</tr>
+<tr>
+<td><span>Hash Rate(GH/S)</span></td>
+<td><span>0.0056</span></td>
+<td><span>Gas Limit</span></td>
+<td><span>0.00154</span></td>
+</tr>
+<tr>
+<td><span>const</span></td>
+<td><span>0.01043</span></td>
+<td><span>Hash Rate(GH/S)</span></td>
+<td><span>0.00196</span></td>
+</tr>
+<tr>
+<td><span>Cumulative Unique Addresses</span></td>
+<td><span>0.01176</span></td>
+<td><span>Gas Used Per Day</span></td>
+<td><span>0.0021</span></td>
+</tr>
+</tbody>
+</table><hr><h2 id="Model-3---Stationarity-vs-Non-Stationarity" data-id="Model-3---Stationarity-vs-Non-Stationarity" style=""><a class="anchor hidden-xs" href="#Model-3---Stationarity-vs-Non-Stationarity" title="Model-3---Stationarity-vs-Non-Stationarity"><span class="octicon octicon-link"></span></a><span>Model 3 - Stationarity vs. Non-Stationarity</span></h2><p><span>當一個資料集的統計數值，像是 mean, variance 和 autocorrelation 不會隨著時間而改變，就稱作 Stationarity。</span></p><p><span>大部分 time series datasets 都不是 stationary，因為都會有 non-stationary 的元素存在其中，像是 trends 或 economic cycles。但我們可以用 ‘stationarize’ 的方式來把原始資料轉為我們最後預測模型的素材。</span></p><p><span>最典型的兩種檢查 Stationarity 的方法就是 Visualization 和 Augmented Dickey-Fuller (ADF) Test.</span></p><h3 id="ADF-Test" data-id="ADF-Test" style=""><a class="anchor hidden-xs" href="#ADF-Test" title="ADF-Test"><span class="octicon octicon-link"></span></a><span>ADF Test.</span></h3><p><img src="https://i.imgur.com/3ycTnXq.png" alt="" loading="lazy"></p><pre><code>Test statistic = -2.004
+P-value = 0.285
+Critical values :
+	1%: -3.441834071558759 - The data is not stationary with 99% confidence
+	5%: -2.8666061267054626 - The data is not stationary with 95% confidence
+	10%: -2.569468095872659 - The data is not stationary with 90% confidence
+</code></pre><h3 id="Detrend" data-id="Detrend" style=""><a class="anchor hidden-xs" href="#Detrend" title="Detrend"><span class="octicon octicon-link"></span></a><span>Detrend</span></h3><p><img src="https://i.imgur.com/YulcbaU.png" alt="" loading="lazy"></p><pre><code>Test statistic = -7.482
+P-value = 0.000
+Critical values :
+	1%: -3.441935806025943 - The data is  stationary with 99% confidence
+	5%: -2.8666509204896093 - The data is  stationary with 95% confidence
+	10%: -2.5694919649816947 - The data is  stationary with 90% confidence
+</code></pre><p><img src="https://i.imgur.com/nbFT5s5.png" alt="" loading="lazy"></p><h3 id="Detrend-HAC" data-id="Detrend-HAC" style=""><a class="anchor hidden-xs" href="#Detrend-HAC" title="Detrend-HAC"><span class="octicon octicon-link"></span></a><span>Detrend-HAC</span></h3><p><span>使用 Detrend 之後的資料做 HAC：</span></p><pre><code>                      Newey-West OLS Regression Results                       
+==============================================================================
+Dep. Variable:               ETH/USDT   R-squared:                       0.561
+Model:                            OLS   Adj. R-squared:                  0.540
+Method:                 Least Squares   F-statistic:                     11.50
+Date:                Fri, 27 May 2022   Prob (F-statistic):           2.22e-28
+Time:                        04:51:51   Log-Likelihood:                -708.95
+No. Observations:                 579   AIC:                             1474.
+Df Residuals:                     551   BIC:                             1596.
+Df Model:                          27                                         
+Covariance Type:                  HAC                                         
+===============================================================================================
+                                  coef    std err          z      P&gt;|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                          60.3464     39.097      1.544      0.123     -16.282     136.975
+ETH_lag1                        2.5626      0.935      2.740      0.006       0.729       4.396
+ETH_lag10                      -4.7408      0.538     -8.818      0.000      -5.795      -3.687
+ETH_lag20                       0.9534      0.499      1.911      0.056      -0.025       1.931
+ETH_lag30                      -0.6520      0.504     -1.293      0.196      -1.641       0.337
+EtherSupply                 -6.418e-09   1.93e-07     -0.033      0.973   -3.84e-07    3.71e-07
+Daily Ether Burnt(ETH)      -8.086e-05   3.47e-05     -2.332      0.020      -0.000   -1.29e-05
+Gas Limit                   -9.669e-07   7.91e-07     -1.223      0.221   -2.52e-06    5.83e-07
+Gas Price(Wei)               -1.47e-11   3.31e-12     -4.436      0.000   -2.12e-11    -8.2e-12
+Gas Used Per Day             1.403e-10    1.4e-10      0.999      0.318   -1.35e-10    4.16e-10
+Average Txn Fee (USD)           0.0621      0.018      3.470      0.001       0.027       0.097
+Blocks Per Day                 -0.0024      0.002     -1.134      0.257      -0.007       0.002
+Average Block Size(Bytes)   -1.459e-05   1.29e-05     -1.132      0.258   -3.99e-05    1.07e-05
+BlockDifficulty                 0.0004      0.001      0.421      0.674      -0.002       0.002
+Hash Rate(GH/S)             -4.067e-06    1.2e-05     -0.338      0.735   -2.76e-05    1.95e-05
+Cumulative Unique Addresses  -8.17e-08   3.62e-08     -2.260      0.024   -1.53e-07   -1.08e-08
+Network Utilization           -30.2207     23.533     -1.284      0.199     -76.345      15.904
+TransactionsCount Per Day     5.12e-06   7.81e-07      6.554      0.000    3.59e-06    6.65e-06
+DeFi_TVL                     2.847e-11   9.16e-12      3.107      0.002    1.05e-11    4.64e-11
+Verified Contracts             -0.0006      0.001     -0.825      0.409      -0.002       0.001
+StableCoins Value            4.582e-11   2.45e-11      1.871      0.061   -2.17e-12    9.38e-11
+Sales NFT per Day            9.157e-10   1.59e-09      0.576      0.564    -2.2e-09    4.03e-09
+Number of sales NFT per Day  1.984e-07   2.13e-06      0.093      0.926   -3.97e-06    4.37e-06
+NASDAQ                          0.0002      0.000      0.884      0.377      -0.000       0.001
+BTC/USDT                     4.694e-05   2.06e-05      2.276      0.023    6.52e-06    8.73e-05
+BNB/USDT                       -0.0074      0.002     -4.311      0.000      -0.011      -0.004
+SOL/USDT                       -0.0167      0.004     -4.068      0.000      -0.025      -0.009
+ADA/USDT                        0.8587      0.288      2.977      0.003       0.293       1.424
+ETC/USDT                       -0.0183      0.007     -2.604      0.009      -0.032      -0.005
+==============================================================================
+Omnibus:                        3.410   Durbin-Watson:                   0.782
+Prob(Omnibus):                  0.182   Jarque-Bera (JB):                3.455
+Skew:                           0.186   Prob(JB):                        0.178
+Kurtosis:                       2.929   Cond. No.                     2.44e+14
+==============================================================================
+</code></pre><h3 id="Significant-Features1" data-id="Significant-Features" style=""><a class="anchor hidden-xs" href="#Significant-Features1" title="Significant-Features1"><span class="octicon octicon-link"></span></a><span>Significant Features</span></h3><table>
+<thead>
+<tr>
+<th><span>HAC(Stationarity)</span></th>
+<th><span>p-value</span></th>
+<th><span>HAC(Non-Stationarity)</span></th>
+<th><span>p-value</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>ETH_lag10</span></td>
+<td><span>0.0</span></td>
+<td><span>ETH_lag1</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Gas Price(Wei)</span></td>
+<td><span>0.0</span></td>
+<td><span>DeFi_TVL</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>TransactionsCount Per Day</span></td>
+<td><span>0.0</span></td>
+<td><span>Average Txn Fee (USD)</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>BNB/USDT</span></td>
+<td><span>0.0</span></td>
+<td><span>TransactionsCount Per Day</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>SOL/USDT</span></td>
+<td><span>0.0</span></td>
+<td><span>Gas Price(Wei)</span></td>
+<td><span>1e-05</span></td>
+</tr>
+<tr>
+<td><span>Average Txn Fee (USD)</span></td>
+<td><span>0.001</span></td>
+<td><span>Network Utilization</span></td>
+<td><span>2e-05</span></td>
+</tr>
+<tr>
+<td><span>DeFi_TVL</span></td>
+<td><span>0.002</span></td>
+<td><span>Gas Used Per Day</span></td>
+<td><span>0.0001</span></td>
+</tr>
+<tr>
+<td><span>ADA/USDT</span></td>
+<td><span>0.003</span></td>
+<td><span>Average Block Size(Bytes)</span></td>
+<td><span>0.0001</span></td>
+</tr>
+<tr>
+<td><span>ETH_lag1</span></td>
+<td><span>0.006</span></td>
+<td><span>Gas Limit</span></td>
+<td><span>0.00013</span></td>
+</tr>
+<tr>
+<td><span>ETC/USDT</span></td>
+<td><span>0.009</span></td>
+<td><span>ETC/USDT</span></td>
+<td><span>0.00018</span></td>
+</tr>
+<tr>
+<td><span>Daily Ether Burnt(ETH)</span></td>
+<td><span>0.02</span></td>
+<td><span>Daily Ether Burnt(ETH)</span></td>
+<td><span>0.00043</span></td>
+</tr>
+<tr>
+<td><span>BTC/USDT</span></td>
+<td><span>0.023</span></td>
+<td><span>BlockDifficulty</span></td>
+<td><span>0.00135</span></td>
+</tr>
+<tr>
+<td><span>Cumulative Unique Addresses</span></td>
+<td><span>0.024</span></td>
+<td><span>Hash Rate(GH/S)</span></td>
+<td><span>0.0056</span></td>
+</tr>
+<tr>
+<td><span>ETH_lag20</span></td>
+<td><span>0.056</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span>StableCoins Value</span></td>
+<td><span>0.061</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><hr><h2 id="Model-4---Data-Split" data-id="Model-4---Data-Split" style=""><a class="anchor hidden-xs" href="#Model-4---Data-Split" title="Model-4---Data-Split"><span class="octicon octicon-link"></span></a><span>Model 4 - Data Split</span></h2><p><span>將資料切分成兩者：Before 10/9/2020 vs. After 10/9/2020</span></p><p><img src="https://i.imgur.com/OOjx9qz.png" alt="" loading="lazy"></p><h3 id="Data-Before" data-id="Data-Before" style=""><a class="anchor hidden-xs" href="#Data-Before" title="Data-Before"><span class="octicon octicon-link"></span></a><span>Data Before</span></h3><p><img src="https://i.imgur.com/kgTHIeL.png" alt="" loading="lazy"></p><ul>
+<li><span>在切分日期以前還沒有某些變數的資料，例如燃燒機制、DeFi、NFT 等都還沒出現</span></li>
+<li><span>和競爭幣的相關性降地很多</span></li>
+<li><span>和擴充性服務（DeFi, NFT）的相關性降低，而和安全性（Hash Rate）的相關性提高</span></li>
+</ul><h3 id="Test-TS’4-amp-TS’5" data-id="Test-TS’4-amp-TS’5" style=""><a class="anchor hidden-xs" href="#Test-TS’4-amp-TS’5" title="Test-TS’4-amp-TS’5"><span class="octicon octicon-link"></span></a><span>Test TS’4 &amp; TS’5</span></h3><p><span>可以發現前 75% 的資料也有 Heteroskedasticity 和 Autocorrelation。</span></p><p><img src="https://i.imgur.com/IIjgrgw.png" alt="" loading="lazy"></p><p><img src="https://i.imgur.com/QURBUak.png" alt="" loading="lazy"></p><h3 id="The-HAC-of-Data-Before" data-id="The-HAC-of-Data-Before" style=""><a class="anchor hidden-xs" href="#The-HAC-of-Data-Before" title="The-HAC-of-Data-Before"><span class="octicon octicon-link"></span></a><span>The HAC of Data Before</span></h3><pre><code>Newey-West OLS Regression Results                       
+==============================================================================
+Dep. Variable:               ETH/USDT   R-squared:                       0.963
+Model:                            OLS   Adj. R-squared:                  0.962
+Method:                 Least Squares   F-statistic:                     84.36
+Date:                Fri, 27 May 2022   Prob (F-statistic):          7.97e-235
+Time:                        04:52:47   Log-Likelihood:                -9862.8
+No. Observations:                1900   AIC:                         1.978e+04
+Df Residuals:                    1872   BIC:                         1.994e+04
+Df Model:                          27                                         
+Covariance Type:                  HAC                                         
+===============================================================================================
+                                  coef    std err          z      P&gt;|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                         606.3436    132.589      4.573      0.000     346.475     866.212
+ETH_lag1                       20.7280     10.584      1.958      0.050      -0.017      41.473
+ETH_lag10                      17.2297     10.133      1.700      0.089      -2.631      37.091
+ETH_lag20                       1.7771     14.353      0.124      0.901     -26.355      29.909
+ETH_lag30                      -4.1038     12.472     -0.329      0.742     -28.549      20.341
+EtherSupply                 -7.545e-06   1.76e-06     -4.289      0.000    -1.1e-05    -4.1e-06
+Daily Ether Burnt(ETH)       5.178e-05   1.96e-05      2.639      0.008    1.33e-05    9.02e-05
+Gas Limit                   -8.426e-06   4.81e-06     -1.752      0.080   -1.78e-05    9.98e-07
+Gas Price(Wei)              -6.378e-11    3.8e-11     -1.678      0.093   -1.38e-10    1.07e-11
+Gas Used Per Day             1.663e-09   1.53e-09      1.085      0.278   -1.34e-09    4.67e-09
+Average Txn Fee (USD)          11.1453      5.695      1.957      0.050      -0.017      22.308
+Blocks Per Day                 -0.0043      0.014     -0.306      0.759      -0.032       0.023
+Average Block Size(Bytes)      -0.0022      0.002     -1.359      0.174      -0.005       0.001
+BlockDifficulty                 0.0840      0.047      1.779      0.075      -0.009       0.176
+Hash Rate(GH/S)                -0.0006      0.001     -1.102      0.270      -0.002       0.000
+Cumulative Unique Addresses -1.369e-07   6.43e-07     -0.213      0.831    -1.4e-06    1.12e-06
+Network Utilization          -136.9067     78.877     -1.736      0.083    -291.504      17.690
+TransactionsCount Per Day       0.0002   5.79e-05      2.992      0.003    5.98e-05       0.000
+DeFi_TVL                    -3.041e-09   5.32e-09     -0.572      0.567   -1.35e-08    7.38e-09
+Verified Contracts              0.1927      0.096      2.011      0.044       0.005       0.380
+StableCoins Value            7.348e-09   3.53e-09      2.084      0.037    4.38e-10    1.43e-08
+Sales NFT per Day           -3.605e-05   1.77e-05     -2.038      0.042   -7.07e-05   -1.38e-06
+Number of sales NFT per Day    -0.0008      0.001     -0.954      0.340      -0.003       0.001
+NASDAQ                          0.0007      0.007      0.107      0.915      -0.012       0.014
+BTC/USDT                        0.0012      0.003      0.376      0.707      -0.005       0.008
+BNB/USDT                        2.2765      1.134      2.008      0.045       0.054       4.499
+SOL/USDT                       -6.8378     14.210     -0.481      0.630     -34.688      21.013
+ADA/USDT                      530.8346    140.969      3.766      0.000     254.541     807.128
+ETC/USDT                       12.1794      1.813      6.720      0.000       8.627      15.732
+==============================================================================
+
+</code></pre><h3 id="Significant-Features2" data-id="Significant-Features" style=""><a class="anchor hidden-xs" href="#Significant-Features2" title="Significant-Features2"><span class="octicon octicon-link"></span></a><span>Significant Features</span></h3><table>
+<thead>
+<tr>
+<th><span>After 2021/1/1</span></th>
+<th><span>p-value</span></th>
+<th><span>Before 2021/1/1</span></th>
+<th><span>p-value</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>ETH_lag1</span></td>
+<td><span>0.0</span></td>
+<td><span>ETC/USDT</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>DeFi_TVL</span></td>
+<td><span>0.0</span></td>
+<td><span>const</span></td>
+<td><span>0.0</span></td>
+</tr>
+<tr>
+<td><span>Average Txn Fee (USD)</span></td>
+<td><span>0.0</span></td>
+<td><span>EtherSupply</span></td>
+<td><span>2e-05</span></td>
+</tr>
+<tr>
+<td><span>TransactionsCount Per Day</span></td>
+<td><span>0.0</span></td>
+<td><span>ADA/USDT</span></td>
+<td><span>0.00017</span></td>
+</tr>
+<tr>
+<td><span>Gas Price(Wei)</span></td>
+<td><span>1e-05</span></td>
+<td><span>TransactionsCount Per Day</span></td>
+<td><span>0.00278</span></td>
+</tr>
+<tr>
+<td><span>Network Utilization</span></td>
+<td><span>2e-05</span></td>
+<td><span>Daily Ether Burnt(ETH)</span></td>
+<td><span>0.00832</span></td>
+</tr>
+<tr>
+<td><span>Gas Used Per Day</span></td>
+<td><span>0.0001</span></td>
+<td><span>StableCoins Value</span></td>
+<td><span>0.03714</span></td>
+</tr>
+<tr>
+<td><span>Average Block Size(Bytes)</span></td>
+<td><span>0.0001</span></td>
+<td><span>Sales NFT per Day</span></td>
+<td><span>0.04152</span></td>
+</tr>
+<tr>
+<td><span>Gas Limit</span></td>
+<td><span>0.00013</span></td>
+<td><span>Verified Contracts</span></td>
+<td><span>0.0443</span></td>
+</tr>
+<tr>
+<td><span>ETC/USDT</span></td>
+<td><span>0.00018</span></td>
+<td><span>BNB/USDT</span></td>
+<td><span>0.04467</span></td>
+</tr>
+<tr>
+<td><span>Daily Ether Burnt(ETH)</span></td>
+<td><span>0.00043</span></td>
+<td><span>ETH_lag1</span></td>
+<td><span>0.05019</span></td>
+</tr>
+<tr>
+<td><span>BlockDifficulty</span></td>
+<td><span>0.00135</span></td>
+<td><span>Average Txn Fee (USD)</span></td>
+<td><span>0.05036</span></td>
+</tr>
+<tr>
+<td><span>Hash Rate(GH/S)</span></td>
+<td><span>0.0056</span></td>
+<td><span>BlockDifficulty</span></td>
+<td><span>0.07527</span></td>
+</tr>
+<tr>
+<td><span>const</span></td>
+<td><span>0.01043</span></td>
+<td><span>Gas Limit</span></td>
+<td><span>0.07972</span></td>
+</tr>
+<tr>
+<td><span>Cumulative Unique Addresses</span></td>
+<td><span>0.01176</span></td>
+<td><span>Network Utilization</span></td>
+<td><span>0.08262</span></td>
+</tr>
+</tbody>
+</table><hr><h2 id="總結" data-id="總結" style=""><a class="anchor hidden-xs" href="#總結" title="總結"><span class="octicon octicon-link"></span></a><span>總結</span></h2><h3 id="結論" data-id="結論" style=""><a class="anchor hidden-xs" href="#結論" title="結論"><span class="octicon octicon-link"></span></a><span>結論</span></h3><ol>
+<li><span>與過去研究的比較</span>
+<ul>
+<li><span>過去研究發現比特幣和那斯達克指數與加密貨幣市場的相關性非常高，但現在有了去中心化金融服務之後，其他有相同服務的競爭鏈反而有更高的相關</span></li>
+</ul>
+</li>
+<li><span>重要因子發現</span>
+<ul>
+<li><span>交易手續費、交易量、去中心化金融服務、競爭幣價格等，與以太幣價格的相關性無論在何種模型都非常顯著</span></li>
+</ul>
+</li>
+<li><span>模型使用場景</span>
+<ul>
+<li><span>更了解 ETH/USDT 資料的趨勢和類型，包含 Stationarity 和 Hetero、Auto Corr 等資訊，藉此找到適合的分析模型</span></li>
+</ul>
+</li>
+</ol><h3 id="未來展望" data-id="未來展望" style=""><a class="anchor hidden-xs" href="#未來展望" title="未來展望"><span class="octicon octicon-link"></span></a><span>未來展望</span></h3><ol>
+<li><span>Response Var.</span>
+<ul>
+<li><span>希望找到更多不同的辦法蒐集其他種類的的 y 資料，不一定是以 ETH/USDT 作為 Response Var.</span></li>
+</ul>
+</li>
+<li><span>Location Factor</span>
+<ul>
+<li><span>目前是以世界去區隔，未來朝以各國中心話交易所的風土民情方向處理模型資料，這樣可以找出交易所溢價的套利機會</span></li>
+</ul>
+</li>
+<li><span>Foundation Target &amp; Regulations</span>
+<ul>
+<li><span>實際上我們沒有辦法判斷 Ethereum Foundation 的策略和談話是利空還是利好，針對 EF 發表內容的性質分析對 Ether 的價值比較適合另外做一篇研究報告來討論。</span></li>
+<li><span>另外一個研究方向是關注 SEC 的談話，如果該月出現負面報導就訂為 1，出現正面報導、無相關報導，或者無法定義的報導都定義為 0。我相信這個相關性也很高只是資料蒐集的負擔比較大，可能需要花一點時間做文字探勘所以也省略。</span></li>
+</ul>
+</li>
+</ol><hr><h2 id="Reference" data-id="Reference" style=""><a class="anchor hidden-xs" href="#Reference" title="Reference"><span class="octicon octicon-link"></span></a><span>Reference</span></h2><ul>
+<li><a href="https://ethereum.org/en/developers/docs/data-and-analytics/block-explorers/" target="_blank" rel="noopener"><span>BLOCK EXPLORERS</span></a></li>
+<li><a href="https://ethereum.org/en/developers/docs/data-and-analytics/" target="_blank" rel="noopener"><span>DATA AND ANALYTICS</span></a></li>
+<li><a href="https://blog.ethereum.org/2016/07/27/inflation-transaction-fees-cryptocurrency-monetary-policy/?fbclid=IwAR3B_0O7r9rZ5EQYmPbygaAzzOl2frlasrZEGf1EyCiK17PitaFNjwuVWHo" target="_blank" rel="noopener"><span>On Inflation, Transaction Fees and Cryptocurrency Monetary Policy</span></a></li>
+</ul><h3 id="Data-Collected-From" data-id="Data-Collected-From" style=""><a class="anchor hidden-xs" href="#Data-Collected-From" title="Data-Collected-From"><span class="octicon octicon-link"></span></a><span>Data Collected From</span></h3><ul>
+<li><a href="https://etherscan.io/" target="_blank" rel="noopener"><span>Etherscan</span></a></li>
+<li><a href="https://defillama.com/" target="_blank" rel="noopener"><span>Defi Llama</span></a></li>
+<li><a href="http://nonfungible.com/market-tracker" target="_blank" rel="noopener"><span>Nonfungible</span></a></li>
+<li><a href="https://www.coingecko.com/" target="_blank" rel="noopener"><span>Coingecko</span></a></li>
+<li><a href="https://www.coinresources.io/" target="_blank" rel="noopener"><span>Coinresources</span></a></li>
+<li><a href="https://tokenterminal.com/terminal/projects/ethereum?gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5i1QEtc99avjBe6yiFA34VNyupvKTelw-G6gQBCI4P1PPiH8Ts_hSMaAqj-EALw_wcB" target="_blank" rel="noopener"><span>Tokenterminal</span></a></li>
+<li><a href="https://www.blockchain.com/charts" target="_blank" rel="noopener"><span>blockchain.com</span></a></li>
+</ul><h3 id="Time-Series-in-Python" data-id="Time-Series-in-Python" style=""><a class="anchor hidden-xs" href="#Time-Series-in-Python" title="Time-Series-in-Python"><span class="octicon octicon-link"></span></a><span>Time Series in Python</span></h3><ul>
+<li><a href="https://www.machinelearningplus.com/time-series/time-series-analysis-python/" target="_blank" rel="noopener"><span>Time Series Analysis in Python – A Comprehensive Guide with Examples</span></a></li>
+<li><a href="https://www.kaggle.com/code/kashnitsky/topic-9-part-1-time-series-analysis-in-python/notebook#Econometric-approach" target="_blank" rel="noopener"><span>Topic 9. Part 1. Time series analysis in Python</span></a></li>
+<li><a href="https://builtin.com/data-science/time-series-forecasting-python" target="_blank" rel="noopener"><span>A Guide to Time Series Forecasting in Python</span></a></li>
+<li><a href="https://www.bounteous.com/insights/2020/09/15/forecasting-time-series-model-using-python-part-one/" target="_blank" rel="noopener"><span>Forecasting with a Time Series Model using Python: Part One</span></a></li>
+<li><a href="https://www.codecademy.com/learn/linear-regression-mssp/modules/multiple-linear-regression-mssp/cheatsheet" target="_blank" rel="noopener"><span>Multiple Linear Regression</span></a></li>
+<li><a href="http://web.vu.lt/mif/a.buteikis/wp-content/uploads/PE_Book/4-8-Multiple-autocorrelation.html" target="_blank" rel="noopener"><span>4.8 Autocorrelated (Serially Correlated) Errors</span></a></li>
+</ul><h3 id="Time-Series-in-R" data-id="Time-Series-in-R" style=""><a class="anchor hidden-xs" href="#Time-Series-in-R" title="Time-Series-in-R"><span class="octicon octicon-link"></span></a><span>Time Series in R</span></h3><ul>
+<li><a href="https://www.simplilearn.com/tutorials/data-science-tutorial/time-series-forecasting-in-r" target="_blank" rel="noopener"><span>A Guide to Time Series Forecasting in R You Should Know</span></a></li>
+<li><a href="https://www.mssqltips.com/sqlservertip/6778/time-series-forecasting-methods-with-r-examples/" target="_blank" rel="noopener"><span>Exploring Four Simple Time Series Forecasting Methods with R Examples</span></a></li>
+<li><a href="http://r-statistics.co/Time-Series-Forecasting-With-R.html" target="_blank" rel="noopener"><span>R Statistics - Time Series Forecasting</span></a></li>
+<li><a href="https://www.statmethods.net/advstats/timeseries.html" target="_blank" rel="noopener"><span>Quick-R - Time Series and Forecasting</span></a></li>
+<li><a href="https://stat-wizards.github.io/Forcasting-A-Time-Series-Stock-Market-Data/" target="_blank" rel="noopener"><span>Forcasting-A-Time-Series-Stock-Market-Data</span></a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/" target="_blank" rel="noopener"><span>A Complete Tutorial on Time Series Modeling in R</span></a></li>
+<li><a href="https://www.kdnuggets.com/2020/07/understanding-time-series-r.html" target="_blank" rel="noopener"><span>Understanding Time Series with R</span></a></li>
+</ul><h3 id="Evaluating-ETH-Price" data-id="Evaluating-ETH-Price" style=""><a class="anchor hidden-xs" href="#Evaluating-ETH-Price" title="Evaluating-ETH-Price"><span class="octicon octicon-link"></span></a><span>Evaluating ETH Price</span></h3><ul>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0275531919300601" target="_blank" rel="noopener"><span>The fair value of a token: How do markets price cryptocurrencies?</span></a></li>
+<li><a href="https://www.macroaxis.com/valuation/ETH.CC/Ethereum" target="_blank" rel="noopener"><span>Ethereum Valuation</span></a></li>
+<li><a href="https://arxiv.org/pdf/2101.05511.pdf" target="_blank" rel="noopener"><span>Quantifying Blockchain Extractable Value:How dark is the forest?</span></a></li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Observing-Ether-Value-in-Basic-Econometrics-Method" title="Observing Ether Value in Basic Econometrics Method">Observing Ether Value in Basic Econometrics Method</a><ul class="nav">
+<li class=""><a href="#目錄" title="目錄">目錄</a></li>
+<li><a href="#研究介紹" title="研究介紹">研究介紹</a><ul class="nav">
+<li><a href="#研究動機" title="研究動機">研究動機</a></li>
+<li><a href="#研究目的" title="研究目的">研究目的</a></li>
+<li><a href="#研究流程" title="研究流程">研究流程</a></li>
+</ul>
+</li>
+<li><a href="#資料描述" title="資料描述">資料描述</a><ul class="nav">
+<li><a href="#Explanatory-amp-Response-Variables" title="Explanatory &amp; Response Variables">Explanatory &amp; Response Variables</a></li>
+<li><a href="#Additional-Remarks" title="Additional Remarks">Additional Remarks</a></li>
+</ul>
+</li>
+<li><a href="#資料處理、特徵工程" title="資料處理、特徵工程">資料處理、特徵工程</a><ul class="nav">
+<li><a href="#Data-Preprocessing" title="Data Preprocessing">Data Preprocessing</a></li>
+<li><a href="#TS’2-No-Perfect-Multicollinearity" title="TS’2 No Perfect Multicollinearity">TS’2 No Perfect Multicollinearity</a></li>
+<li><a href="#EDA（探索式資料分析）" title="EDA（探索式資料分析）">EDA（探索式資料分析）</a></li>
+</ul>
+</li>
+<li><a href="#Model-1---Original-OLS" title="Model 1 - Original OLS">Model 1 - Original OLS</a><ul class="nav">
+<li><a href="#TS’4-Heteroscedasticity" title="TS’4 Heteroscedasticity">TS’4 Heteroscedasticity</a></li>
+<li><a href="#TS’4-Heteroscedasticity-Bruesch-Pagan-Test" title="TS’4 Heteroscedasticity-Bruesch-Pagan Test">TS’4 Heteroscedasticity-Bruesch-Pagan Test</a></li>
+<li><a href="#TS’5-Autocorrelation" title="TS’5 Autocorrelation">TS’5 Autocorrelation</a></li>
+<li><a href="#TS’5-Autocorrelation-Breusch-Godfrey-Test" title="TS’5 Autocorrelation-Breusch-Godfrey Test">TS’5 Autocorrelation-Breusch-Godfrey Test</a></li>
+</ul>
+</li>
+<li><a href="#Model-2---HAC-vs-FGLS" title="Model 2 - HAC vs. FGLS">Model 2 - HAC vs. FGLS</a><ul class="nav">
+<li><a href="#Newey-West-standard-errors-for-OLS---HAC" title="Newey-West standard errors for OLS - HAC">Newey-West standard errors for OLS - HAC</a></li>
+<li><a href="#HAC-模型-Fitting-結果" title="HAC 模型 Fitting 結果">HAC 模型 Fitting 結果</a></li>
+<li><a href="#各模型比較" title="各模型比較">各模型比較</a></li>
+<li><a href="#Significant-Features" title="Significant Features">Significant Features</a></li>
+</ul>
+</li>
+<li><a href="#Model-3---Stationarity-vs-Non-Stationarity" title="Model 3 - Stationarity vs. Non-Stationarity">Model 3 - Stationarity vs. Non-Stationarity</a><ul class="nav">
+<li><a href="#ADF-Test" title="ADF Test.">ADF Test.</a></li>
+<li><a href="#Detrend" title="Detrend">Detrend</a></li>
+<li><a href="#Detrend-HAC" title="Detrend-HAC">Detrend-HAC</a></li>
+<li><a href="#Significant-Features1" title="Significant Features">Significant Features</a></li>
+</ul>
+</li>
+<li><a href="#Model-4---Data-Split" title="Model 4 - Data Split">Model 4 - Data Split</a><ul class="nav">
+<li><a href="#Data-Before" title="Data Before">Data Before</a></li>
+<li><a href="#Test-TS’4-amp-TS’5" title="Test TS’4 &amp; TS’5">Test TS’4 &amp; TS’5</a></li>
+<li><a href="#The-HAC-of-Data-Before" title="The HAC of Data Before">The HAC of Data Before</a></li>
+<li><a href="#Significant-Features2" title="Significant Features">Significant Features</a></li>
+</ul>
+</li>
+<li><a href="#總結" title="總結">總結</a><ul class="nav">
+<li><a href="#結論" title="結論">結論</a></li>
+<li><a href="#未來展望" title="未來展望">未來展望</a></li>
+</ul>
+</li>
+<li><a href="#Reference" title="Reference">Reference</a><ul class="nav">
+<li><a href="#Data-Collected-From" title="Data Collected From">Data Collected From</a></li>
+<li><a href="#Time-Series-in-Python" title="Time Series in Python">Time Series in Python</a></li>
+<li><a href="#Time-Series-in-R" title="Time Series in R">Time Series in R</a></li>
+<li><a href="#Evaluating-ETH-Price" title="Evaluating ETH Price">Evaluating ETH Price</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Observing-Ether-Value-in-Basic-Econometrics-Method" title="Observing Ether Value in Basic Econometrics Method">Observing Ether Value in Basic Econometrics Method</a><ul class="nav">
+<li class=""><a href="#目錄" title="目錄">目錄</a></li>
+<li><a href="#研究介紹" title="研究介紹">研究介紹</a><ul class="nav">
+<li><a href="#研究動機" title="研究動機">研究動機</a></li>
+<li><a href="#研究目的" title="研究目的">研究目的</a></li>
+<li><a href="#研究流程" title="研究流程">研究流程</a></li>
+</ul>
+</li>
+<li><a href="#資料描述" title="資料描述">資料描述</a><ul class="nav">
+<li><a href="#Explanatory-amp-Response-Variables" title="Explanatory &amp; Response Variables">Explanatory &amp; Response Variables</a></li>
+<li><a href="#Additional-Remarks" title="Additional Remarks">Additional Remarks</a></li>
+</ul>
+</li>
+<li><a href="#資料處理、特徵工程" title="資料處理、特徵工程">資料處理、特徵工程</a><ul class="nav">
+<li><a href="#Data-Preprocessing" title="Data Preprocessing">Data Preprocessing</a></li>
+<li><a href="#TS’2-No-Perfect-Multicollinearity" title="TS’2 No Perfect Multicollinearity">TS’2 No Perfect Multicollinearity</a></li>
+<li><a href="#EDA（探索式資料分析）" title="EDA（探索式資料分析）">EDA（探索式資料分析）</a></li>
+</ul>
+</li>
+<li><a href="#Model-1---Original-OLS" title="Model 1 - Original OLS">Model 1 - Original OLS</a><ul class="nav">
+<li><a href="#TS’4-Heteroscedasticity" title="TS’4 Heteroscedasticity">TS’4 Heteroscedasticity</a></li>
+<li><a href="#TS’4-Heteroscedasticity-Bruesch-Pagan-Test" title="TS’4 Heteroscedasticity-Bruesch-Pagan Test">TS’4 Heteroscedasticity-Bruesch-Pagan Test</a></li>
+<li><a href="#TS’5-Autocorrelation" title="TS’5 Autocorrelation">TS’5 Autocorrelation</a></li>
+<li><a href="#TS’5-Autocorrelation-Breusch-Godfrey-Test" title="TS’5 Autocorrelation-Breusch-Godfrey Test">TS’5 Autocorrelation-Breusch-Godfrey Test</a></li>
+</ul>
+</li>
+<li><a href="#Model-2---HAC-vs-FGLS" title="Model 2 - HAC vs. FGLS">Model 2 - HAC vs. FGLS</a><ul class="nav">
+<li><a href="#Newey-West-standard-errors-for-OLS---HAC" title="Newey-West standard errors for OLS - HAC">Newey-West standard errors for OLS - HAC</a></li>
+<li><a href="#HAC-模型-Fitting-結果" title="HAC 模型 Fitting 結果">HAC 模型 Fitting 結果</a></li>
+<li><a href="#各模型比較" title="各模型比較">各模型比較</a></li>
+<li><a href="#Significant-Features" title="Significant Features">Significant Features</a></li>
+</ul>
+</li>
+<li><a href="#Model-3---Stationarity-vs-Non-Stationarity" title="Model 3 - Stationarity vs. Non-Stationarity">Model 3 - Stationarity vs. Non-Stationarity</a><ul class="nav">
+<li><a href="#ADF-Test" title="ADF Test.">ADF Test.</a></li>
+<li><a href="#Detrend" title="Detrend">Detrend</a></li>
+<li><a href="#Detrend-HAC" title="Detrend-HAC">Detrend-HAC</a></li>
+<li><a href="#Significant-Features1" title="Significant Features">Significant Features</a></li>
+</ul>
+</li>
+<li><a href="#Model-4---Data-Split" title="Model 4 - Data Split">Model 4 - Data Split</a><ul class="nav">
+<li><a href="#Data-Before" title="Data Before">Data Before</a></li>
+<li><a href="#Test-TS’4-amp-TS’5" title="Test TS’4 &amp; TS’5">Test TS’4 &amp; TS’5</a></li>
+<li><a href="#The-HAC-of-Data-Before" title="The HAC of Data Before">The HAC of Data Before</a></li>
+<li><a href="#Significant-Features2" title="Significant Features">Significant Features</a></li>
+</ul>
+</li>
+<li><a href="#總結" title="總結">總結</a><ul class="nav">
+<li><a href="#結論" title="結論">結論</a></li>
+<li><a href="#未來展望" title="未來展望">未來展望</a></li>
+</ul>
+</li>
+<li><a href="#Reference" title="Reference">Reference</a><ul class="nav">
+<li><a href="#Data-Collected-From" title="Data Collected From">Data Collected From</a></li>
+<li><a href="#Time-Series-in-Python" title="Time Series in Python">Time Series in Python</a></li>
+<li><a href="#Time-Series-in-R" title="Time Series in R">Time Series in R</a></li>
+<li><a href="#Evaluating-ETH-Price" title="Evaluating ETH Price">Evaluating ETH Price</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
